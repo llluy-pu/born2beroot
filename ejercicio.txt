@@ -1,0 +1,59 @@
+https://github.com/hanshazairi/42-born2beroot
+
+https://github.com/pasqualerossi/Born2BeRoot-Guide
+
+42islive
+
+- Debian o CentOS?
+Debian es mas facil de instalar y configurar.
+
+- Diferencias entre Debian y CentOS?
+Debian es mas user friendly, mas facil de actualizar u soporta una gran cantidad de librerias.
+Es mas customizable. CentOS esta mas pensado para negocios, es mas empresarial.
+
+- Que es una maquina virtual?
+Es un sistema operativo que corre dentro de otro sistema operativo.
+
+- Diferencias entre aptitude y apt?
+aptitude es mas completo que apt, pero apt es mas facil de usar.
+Apt solo hace lo que explicitamente le pedimos, mientras que aptitude puede hacer mas cosas
+como borrar paquetes que no se usan, etc.
+
+- Que es AppArmor?
+Es un sistema de seguridad que permite restringir el acceso a los archivos y a los recursos
+del sistema.
+
+- Reglas de Password
+Minimo 10 caracteres, al menos una letra mayuscula, al menos una letra minuscula,
+al menos un numero, no puede ser similar a otro usuario.
+
+- Que es LVM?
+Es un sistema de administracion de discos que permite agrupar discos en un grupo logico
+
+- Que es UFW?
+Es un firewall que viene por defecto en Ubuntu.
+
+- Que es ssh?
+Es un protocolo de red que permite conectarse a un servidor remoto.
+
+-Que es Cron?
+Es un servicio que permite ejecutar tareas programadas.
+
+sudo ufw status
+sudo systemctl status ssh
+getent group sudo
+getent group user42
+sudo adduser new username
+sudo groupadd groupname
+sudo usermod -aG groupname username
+sudo chage -l username - check password expire rules
+hostnamectl
+hostnamectl set-hostname new_hostname - to change the current hostname
+Restart your Virtual Machine.
+sudo nano /etc/hosts - change current hostname to new hostname
+lsblk to display the partitions
+dpkg -l | grep sudo – to show that sudo is installed
+sudo ufw status numbered
+sudo ufw allow port-id
+sudo ufw delete rule number
+ssh your_user_id@127.0.0.1 -p 4242 - do this in terminal to show that SSH to port 4242 is working
