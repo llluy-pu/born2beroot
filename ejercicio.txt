@@ -39,21 +39,21 @@ Es un protocolo de red que permite conectarse a un servidor remoto.
 -Que es Cron?
 Es un servicio que permite ejecutar tareas programadas.
 
-sudo ufw status
-sudo systemctl status ssh
-getent group sudo
-getent group user42
-sudo adduser new username
-sudo groupadd groupname
-sudo usermod -aG groupname username
-sudo chage -l username - check password expire rules
-hostnamectl
-hostnamectl set-hostname new_hostname - to change the current hostname
-Restart your Virtual Machine.
-sudo nano /etc/hosts - change current hostname to new hostname
-lsblk to display the partitions
-dpkg -l | grep sudo – to show that sudo is installed
-sudo ufw status numbered
-sudo ufw allow port-id
-sudo ufw delete rule number
-ssh your_user_id@127.0.0.1 -p 4242 - do this in terminal to show that SSH to port 4242 is working
+sudo ufw status // to check the status of the firewall
+sudo systemctl status ssh // to check the status of the ssh service
+getent group sudo // to check if the sudo group exists
+getent group user42 // to check if the user42 group exists
+sudo adduser new username // to add a new user
+sudo groupadd groupname // to add a new group
+sudo usermod -aG groupname username // to add a user to a group
+sudo chage -l username - check password expire rules    // to check password expire rules
+hostnamectl // to check the current hostname
+hostnamectl set-hostname new_hostname // to change the hostname
+ 
+sudo nano /etc/hosts // to edit the hosts file
+lsblk // to check the current block devices
+dpkg -l | grep sudo // to check if sudo is installed
+sudo ufw status numbered // to check the status of the firewall with rule numbers
+sudo ufw allow port-id // to allow a port
+sudo ufw delete rule number // to delete a rule
+ssh your_user_id@127.0.0.1 -p 4242 // to connect to the ssh server
