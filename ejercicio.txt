@@ -39,6 +39,7 @@ Es un protocolo de red que permite conectarse a un servidor remoto.
 -Que es Cron?
 Es un servicio que permite ejecutar tareas programadas.
 
+shazum // to check the current user
 sudo ufw status // to check the status of the firewall
 sudo systemctl status ssh // to check the status of the ssh service
 getent group sudo // to check if the sudo group exists
